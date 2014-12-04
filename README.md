@@ -3,7 +3,8 @@ Cordova Auto-Crosswalk
 
 Shell script to auto-convert Cordova-Android 3.6 projects to Cordova Crosswalk 11.
 Creates a unified apk (x86 & ARM compatible.).
-Tested with Cordova 3.6.4, 
+
+Tested with Cordova 3.6.4. 
 
 Usage
 ----------------------
