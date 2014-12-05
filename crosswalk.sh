@@ -20,7 +20,7 @@ CROSSWALK_VERSION="11.39.260.0"
 ##########################################################################################################################################
 
 # Script Version
-VERSION="1.0"
+VERSION="1.0.1"
 
 # Environment
 clear
@@ -75,7 +75,7 @@ echo "██║     ██╔══██╗██║   ██║╚════
 echo "╚██████╗██║  ██║╚██████╔╝███████║███████║╚███╔███╔╝██║  ██║███████╗██║  ██╗" | PRINT_UNPREFIXED
 echo " ╚═════╝╚═╝  ╚═╝ ╚═════╝ ╚══════╝╚══════╝ ╚══╝╚══╝ ╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝" | PRINT_UNPREFIXED
 echo "                                                                           " | PRINT_UNPREFIXED
-echo "VERSION: ""${VERSION}""                                                               " | PRINT_UNPREFIXED
+echo "VERSION: ""${VERSION}""                                                             " | PRINT_UNPREFIXED
 echo "PROJECT REPO:" "https://github.com/SidneyS/cordova-autocrosswalk""             " | PRINT_UNPREFIXED
 echo "\n\n"
 
