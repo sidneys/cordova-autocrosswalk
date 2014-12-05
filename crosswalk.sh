@@ -22,6 +22,12 @@ CROSSWALK_VERSION="11.39.260.0"
 # Script Version
 VERSION="1.0"
 
+# Environment
+clear
+IFS=$'\n'
+shopt -s nullglob
+export PATH=$PATH:/usr/libexec
+
 # Generate URLs
 _CROSSWALK_TYPE=($(echo "${CROSSWALK_TYPE}" | tr '[:upper:]' '[:lower:]'))
 _CROSSWALK_VERSION="${CROSSWALK_VERSION}"
@@ -33,12 +39,6 @@ _DIR_PROJECTROOT=($(pwd))
 _DIR_TEMPORARY="${_DIR_PROJECTROOT}"/.crosswalk_temp
 _DIR_CROSSWALK="${_DIR_TEMPORARY}"/"_CordovaLib"
 _CROSSWALK_VERSION_NAME=$(echo "${_CROSSWALK_TYPE}" | tr '[:lower:]' '[:upper:]')" (${_CROSSWALK_VERSION})"
-
-# Environment
-clear
-IFS=$'\n'
-shopt -s nullglob
-export PATH=$PATH:/usr/libexec
 
 # Prefix
 PRINT_UNPREFIXED () 
