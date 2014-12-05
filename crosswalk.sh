@@ -20,7 +20,7 @@ CROSSWALK_VERSION="11.39.260.0"
 ##########################################################################################################################################
 
 # Script Version
-VERSION="1.0.1"
+VERSION="1.0.2"
 
 # Environment
 clear
@@ -92,7 +92,7 @@ echo "Downloading Cordova-Crosswalk ${_CROSSWALK_VERSION_NAME} (x86 & ARM)." | P
 _URLS=("${_URL_X86}" "${_URL_ARM}")
 _FILE_TEMP="crosswalk_temp.zip"
 for url in "${_URLS[@]}"; do
-    wget --quiet --output-document="${_FILE_TEMP}" "${url}"
+    curl --output "${_FILE_TEMP}" "${url}"
     mv "${_DIR_PROJECTROOT}"/"${_FILE_TEMP}" "${_DIR_TEMPORARY}"/"${_FILE_TEMP}"
     unzip  -q "${_DIR_TEMPORARY}"/"${_FILE_TEMP}" -d "${_DIR_TEMPORARY}"
     rm -rf "${_DIR_TEMPORARY}"/"${_FILE_TEMP}"
