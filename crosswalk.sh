@@ -11,7 +11,7 @@
 
 # Crosswalk Version
 CROSSWALK_TYPE="CANARY"
-CROSSWALK_VERSION="11.39.260.0"
+CROSSWALK_VERSION="11.39.262.0"
 
 ##########################################################################################################################################
 ##########################################################################################################################################
@@ -20,7 +20,7 @@ CROSSWALK_VERSION="11.39.260.0"
 ##########################################################################################################################################
 
 # Script Version
-VERSION="1.0.2"
+VERSION="1.0.3"
 
 # Environment
 clear
@@ -121,9 +121,9 @@ rm -rf "${_DIR_ARM}"
 rm -rf "${_DIR_PROJECTROOT}"/"platforms/android/CordovaLib"
 cp -rf "${_DIR_CROSSWALK}"/* "${_DIR_PROJECTROOT}"/"platforms/android/"
 
-# Bump Android Minimum SDK to 14 (4.0)
+# Bump Android Minimum SDK from 10 to 14 (4.0)
 echo "Bumping Android minimum API Level to 14 (4.0 /  Ice Cream Sandwich)." | PRINT_PREFIXED
-find "${_DIR_PROJECTROOT}"/"platforms/android" -name "AndroidManifest.xml" -type f -exec sed -i '' 's/minSdkVersion="[0-9]+"/minSdkVersion="14"/g' {} +
+find "platforms/android" -name "AndroidManifest.xml" -type f -exec sed -i '' 's/minSdkVersion="10"/minSdkVersion="14"/g' {} \;
 
 # Update Android platform project
 cd "${_DIR_PROJECTROOT}"/"platforms/android/CordovaLib"
