@@ -1,6 +1,8 @@
 Cordova Auto-Crosswalk
 ======================
 
+[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/SidneyS/cordova-autocrosswalk?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 Shell script to auto-convert Cordova-Android 3.6 projects to Cordova Crosswalk 11.
 Creates a unified apk (x86 & ARM compatible.).
 
